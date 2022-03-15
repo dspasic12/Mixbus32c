@@ -1,0 +1,56 @@
+GENERAL:
+- Stretch mode:
+	- provide semitone & cents values for tuning adjustment (expressed rate percentage does not bring any real-world value to musicians in general)
+	- shortcut: ability to pitch up/down selected region (or slice) by semitone
+	- this request is already available in the pitch-shift menu (choose octave, semitone and cent for selected region) (Region>Edit>Pitch Shift) but pitch shift uses (some timestretch) algorithm - which introduces artifacts. The main idea of my request is to be able to pitch-shift audio material WITHOUT audio artifacts (analog to what you would hear by changing play rate of tape recorder; or - exactly like varispeed, but per region or slices in the offline manner)
+- MIDI region copies are independent by default
+- Pitch bend automation:
+	- user-friendly value display (expressed in semitones/cents, rather than 8192)
+	- modifier+click (or other method) to reset automation point to zero value (currently displayed as 8192)
+- Plugin automation:
+	- playlist-alike approach for automation lanes
+	- glue to region like midi automation (selecting portion of audio/MIDI region or whole region should select all existing automation lanes as well)
+		example: easily copy sections of song which include a lot of plugin automation lanes (intro/vese/chorus)
+- consolidate range:
+	- selection default shortcut (why: Mixbus already has the most efficient keyboard shortcuts, so i'm assured that this would be really well thought-out by the team)
+	- after recording MIDI on track which already has existing MIDI region(s), all previously existing MIDI regions should be consolidated in the range of current (latest) MIDI recording
+- transform:
+	- default shortcut
+	- when used - it should store settings from previous apply
+	- create custom presets which you could bind to a keystroke (or create buttons in the transform dialogue which you could pre-define as template)
+		- example: create custom template for hi-hats (velocity range from 70-110, note start shift to some amount..). select hi-hats in MIDI region, press transform dialogue, select preset with single click)
+- punch in:
+	- whenever punch range is created (by shortcut "[") buttons "In" and "Out" should be engaged by default (or config checkbox which can enable this behavior)
+	  or: whenever shift+comma is pressed (insert punch-in marker) "In" button would be toggled by this action. Same goes for shift+dot (punch-out)
+- slip editing MIDI regions (like audio)
+- Import multiple audio files in same track - as playlists
+
+ALL XT PLUGINS:
+- Add Sidechain where applicable
+- Add Analyzers to EQ series (example where applicable: XT-EQ XT-ME)
+- Add Delta feature where applicable:
+	Delta preview mode previews the difference between compressed and original signal (https://www.tokyodawn.net/tdr-kotelnikov/)
+- Add Equal loudness bypass (for easier comparison of with/without processor where applicable)
+
+XT-SC:
+- Add spectral sidechain ability to Spectral Compressor (XT-SC) (examples: trackspacer, soothe) - i think that this might open new possibilities with the already awesome plugin!
+
+XT-MC:
+- Add make-up gain per band
+- Add attack/release per band
+
+XT-3D
+- Add duck function 
+	it does duck the wet signal when dry signal is present - something like simplified internal sidechain which could give great results  (Reason "the echo" device has it)
+
+XT-TS:
+- Tape Saturation plugin with width parameter - like found in mixbuses  :) 
+- Width control
+
+XT-DC
+- add auto-solo feature - which is present in 'AVA Drum Flow' (in the same module which is drum character)
+- ability to set attack/tail in miliseconds - which is present in 'AVA Drum Flow' (in the same module which is drum character)
+
+XT-CC
+- additional 'simple' mode which when enabled will: 
+	- hide all parameters except following controls: Threshold, Ratio, Attack, Release, Makeup (like compressor section in AVA Drum Flow) + sidechain eq section from existing Console Compressor
