@@ -24,6 +24,9 @@ GENERAL:
 	  or: whenever shift+comma is pressed (insert punch-in marker) "In" button would be toggled by this action. Same goes for shift+dot (punch-out)
 - slip editing MIDI regions (like audio)
 - Import multiple audio files in same track - as playlists
+- Opaque region (visual confusion):
+	- expectation: when all layers within one audio region are opaque-enabled - all layers should have same visual opacity 
+	- current state: the first layer always has dominant colors - visually implying that the first layer is somehow more important. (all layers are playing equally nonetheless, but the visual aspect can be confusing/annoying)
 
 ALL XT PLUGINS:
 - Add Sidechain where applicable
