@@ -1,4 +1,5 @@
 GENERAL:
+-ARA (Audio Random Access) support
 - Stretch mode:
 	- provide semitone & cents values for tuning adjustment (expressed rate percentage does not bring any real-world value to musicians in general)
 	- shortcut: ability to pitch up/down selected region (or slice) by semitone
